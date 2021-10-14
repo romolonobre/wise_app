@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>629455080768-7ve137mje7cr52f7a12uks29ptl4cefd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.629455080768-7ve137mje7cr52f7a12uks29ptl4cefd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAHQuFoHu77AhHP2-WATkf15gaAZjk0670</string>
+	<key>GCM_SENDER_ID</key>
+	<string>629455080768</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>romolo92.wise</string>
+	<key>PROJECT_ID</key>
+	<string>wise-9c470</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wise-9c470.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:629455080768:ios:52bc28f5a9d44e82163ea5</string>
+</dict>
+</plist>
