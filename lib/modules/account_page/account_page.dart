@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:wise/modules/account_page/widgets/account_app_bar.dart';
 import 'package:wise/modules/account_page/widgets/profile_avatar.dart';
 import 'package:wise/modules/account_page/widgets/profile_name_header.dart';
+import 'package:wise/modules/account_page/widgets/wise_bank_card_list_view.dart';
 import 'package:wise/modules/home_bottom_bar_page.dart/widgets/custom_app_bar.dart';
 
 class AccountPage extends StatelessWidget {
@@ -22,6 +23,8 @@ class AccountPage extends StatelessWidget {
               ProfileAvatar(),
               SizedBox(height: 10),
               ProfileNameHeader(),
+              SizedBox(height: 10),
+              WiseBankCardListView()
             ],
           ),
         ),
