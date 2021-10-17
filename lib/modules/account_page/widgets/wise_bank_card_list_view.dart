@@ -17,7 +17,7 @@ class WiseBankCardListView extends StatelessWidget {
           SizedBox(
             width: 70,
           ),
-          Wise_Card_Content(
+          WiseCardContent(
             cardColor: Color(0xff45ec71),
             imagePath: 'assets/images/wise_card1.png',
             cardNumber: '∗∗∗∗ ∗∗∗∗ ∗∗∗∗ 7364',
@@ -26,7 +26,7 @@ class WiseBankCardListView extends StatelessWidget {
             leftRigh: -14,
             topBottom: 20,
           ),
-          Wise_Card_Content(
+          WiseCardContent(
             cardColor: Color(0xff919de1),
             imagePath: 'assets/images/wise_card2.png',
             cardNumber: '∗∗∗∗ ∗∗∗∗ ∗∗∗∗ 3212',
@@ -35,7 +35,7 @@ class WiseBankCardListView extends StatelessWidget {
             leftRigh: 248,
             topBottom: 90,
           ),
-          Wise_Card_Content(
+          WiseCardContent(
             cardColor: Color(0xff919de1),
             imagePath: 'assets/images/wise_card2.png',
             cardNumber: ' Add new card',
