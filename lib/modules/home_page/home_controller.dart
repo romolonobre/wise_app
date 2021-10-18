@@ -13,7 +13,7 @@ class HomeController extends GetxController {
   /// We have to pass the key id because we will navigate using the key,
   /// with that we dont need to set any module page in the main.dart
   ///
-  goToPage(int page) {
+  goToPage(int page ) {
     _currentIndex(page);
 
     //Homebottombar PAGE

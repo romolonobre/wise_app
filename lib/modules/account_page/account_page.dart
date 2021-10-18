@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:wise/modules/account_page/widgets/accoount_service_list.dart';
 import 'package:wise/modules/account_page/widgets/account_app_bar.dart';
 import 'package:wise/modules/account_page/widgets/icon_card_functionality.dart';
 import 'package:wise/modules/account_page/widgets/profile_avatar.dart';
@@ -37,7 +38,9 @@ class AccountPage extends StatelessWidget {
                   IconCardFunctionality(
                       icon: Icon(Icons.settings), label: 'Manage card'),
                 ],
-              )
+              ),
+              SizedBox(height: 20),
+              ListViewAccount()
             ],
           ),
         ),
