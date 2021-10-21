@@ -9,16 +9,11 @@ class HomeBottomBarController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-
     fetchCurrencyItens();
-  }
-
-  @override
-  void onReady() {
-    // TODO: implement onReady
-    super.onReady();
     fetchNewTransactionItens();
   }
+
+// fetchCurrencyItens will fetch the recentCurrency list
 
   void fetchCurrencyItens() async {
     await Future.delayed(Duration(milliseconds: 1));
@@ -44,6 +39,7 @@ class HomeBottomBarController extends GetxController {
     recentCurrencyItens.value = recentCurrencyResult;
   }
 
+// fetchNewTransactionItens will fetch the newtransaction list
   void fetchNewTransactionItens() async {
     await Future.delayed(Duration(milliseconds: 1));
     var newtransactionResult = [

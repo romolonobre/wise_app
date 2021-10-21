@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:wise/application/constants/contants.dart';
 
+/// PFOFILE NAME HEADER
+
 class ProfileNameHeader extends StatelessWidget {
   const ProfileNameHeader({Key? key}) : super(key: key);
 

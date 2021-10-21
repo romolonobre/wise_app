@@ -8,6 +8,10 @@ import 'package:wise/modules/account_page/widgets/profile_name_header.dart';
 import 'package:wise/modules/account_page/widgets/wise_bank_card_list_view.dart';
 import 'package:wise/modules/home_bottom_bar_page.dart/widgets/custom_top_bar.dart';
 
+//
+// This widget will help us to organise the widgets on the screen
+//
+
 class AccountPage extends StatelessWidget {
   const AccountPage({Key? key}) : super(key: key);
 
