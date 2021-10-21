@@ -4,6 +4,9 @@ import 'package:wise/application/constants/contants.dart';
 
 import 'recent_currency_list_view.dart';
 
+// This Widget will draw a $SliverAppBar, we use sliverappbar
+// to give a nice animation when the user scroll up
+
 class CustomTopBar extends StatelessWidget {
   const CustomTopBar({
     Key? key,

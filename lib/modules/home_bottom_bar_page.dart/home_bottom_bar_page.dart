@@ -9,7 +9,6 @@ import 'widgets/card_currency_slider.dart';
 import 'widgets/custom_top_bar.dart';
 import 'widgets/new_transactions_display.dart';
 
-// ignore: must_be_immutable
 class HomeBottomBarPage extends GetView<HomeBottomBarController> {
   final homeBottomBarController = Get.put(HomeBottomBarController());
   HomeBottomBarPage({Key? key}) : super(key: key);

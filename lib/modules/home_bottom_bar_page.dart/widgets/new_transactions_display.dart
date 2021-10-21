@@ -4,6 +4,10 @@ import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:wise/application/constants/contants.dart';
 import 'package:wise/modules/home_bottom_bar_page.dart/home_bottom_bar_controller.dart';
 
+/// This widget will draw all the new transactions diplays on the home screen
+/// will be organized in a SliverList widget fallow by ListTile widget
+///
+
 class NewTransactionDisplay extends GetView<HomeBottomBarController> {
   const NewTransactionDisplay({
     Key? key,
@@ -29,12 +33,18 @@ class NewTransactionDisplay extends GetView<HomeBottomBarController> {
                       shape: BoxShape.circle,
                       color: Colors.blue.withOpacity(0.06),
                     ),
+
+                    // leadingIcon value
+
                     child: Icon(
                       controller.newTransactionsItens[index].leadingIcon,
                       color: blueMainColor,
                       size: 21,
                     ),
                   ),
+
+                  //  description value
+
                   title: Text(
                     controller.newTransactionsItens[index].description,
                     style: const TextStyle(
@@ -43,6 +53,9 @@ class NewTransactionDisplay extends GetView<HomeBottomBarController> {
                       fontSize: 13,
                     ),
                   ),
+
+                  // subDescription value
+
                   subtitle: Text(
                     controller.newTransactionsItens[index].subDescription,
                     style: const TextStyle(
@@ -51,6 +64,9 @@ class NewTransactionDisplay extends GetView<HomeBottomBarController> {
                       fontSize: 13,
                     ),
                   ),
+
+                  // amount value
+
                   trailing: Text(
                     controller.newTransactionsItens[index].amount,
                     style: const TextStyle(

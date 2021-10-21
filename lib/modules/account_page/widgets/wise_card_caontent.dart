@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+/// WISE BANK CARD DYNAMIC WIDGET
+/// This widget will help us to stabilish how the
+/// wise bank card will be drawn on the screen
+
 class WiseCardContent extends StatelessWidget {
   final String imagePath;
   final Color cardColor;
@@ -32,6 +36,9 @@ class WiseCardContent extends StatelessWidget {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10), color: cardColor),
         ),
+
+        /// We use CircleAvatar to make a small gap design on the card
+
         Positioned(
           left: leftRigh,
           top: topBottom,
@@ -43,6 +50,9 @@ class WiseCardContent extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
+              //
+              // Wise card logo
+
               Image.asset(
                 imagePath,
                 height: 70,
@@ -50,6 +60,9 @@ class WiseCardContent extends StatelessWidget {
                 fit: BoxFit.contain,
               ),
               const SizedBox(height: 4),
+
+              // Wise card number
+
               Text(
                 cardNumber,
                 style: const TextStyle(
@@ -60,6 +73,9 @@ class WiseCardContent extends StatelessWidget {
             ],
           ),
         ),
+
+        // Wise card expyre date
+
         Positioned(
           bottom: 10,
           right: 40,
@@ -76,6 +92,9 @@ class WiseCardContent extends StatelessWidget {
               const SizedBox(
                 width: 20,
               ),
+
+              // Wise card Type (VISA)
+
               Text(
                 cardType,
                 style: const TextStyle(

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:wise/modules/account_page/widgets/profile_avatar.dart';
 
+// This Widget will draw a $SliverAppBar, we use sliverappbar
+// give a nice animation when the user scroll up
+
 class AccountAppBar extends StatelessWidget implements PreferredSizeWidget {
   const AccountAppBar({Key? key}) : super(key: key);
 
@@ -11,6 +14,8 @@ class AccountAppBar extends StatelessWidget implements PreferredSizeWidget {
       pinned: true,
       elevation: 0,
       actions: [
+        // ICON BUTTON VALEU
+
         IconButton(
           onPressed: () {},
           icon: Icon(
@@ -19,6 +24,9 @@ class AccountAppBar extends StatelessWidget implements PreferredSizeWidget {
             color: Colors.blue[600],
           ),
         ),
+
+        // ICON BUTTON VALEU
+
         IconButton(
           onPressed: () {},
           icon: Icon(
