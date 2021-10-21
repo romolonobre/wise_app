@@ -1,37 +1,74 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:wise/application/constants/contants.dart';
+import 'package:wise/modules/home_bottom_bar_page.dart/home_bottom_bar_controller.dart';
 
-class NewTransactionDisplay extends StatelessWidget {
+class NewTransactionDisplay extends GetView<HomeBottomBarController> {
   const NewTransactionDisplay({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Container(
-        width: double.infinity,
-        decoration: const BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(12),
-            topRight: Radius.circular(12),
-          ),
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+    return SliverList(
+      delegate: SliverChildBuilderDelegate((BuildContext context, int index) {
+        return Column(
           children: [
-            Text(
-              'No New Transactions',
-              style: TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.w400,
-                color: blueMainColor,
+            Container(
+              decoration: const BoxDecoration(
+                color: Colors.white,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ListTile(
+                  leading: Container(
+                    height: 38,
+                    width: 38,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.blue.withOpacity(0.06),
+                    ),
+                    child: Icon(
+                      controller.newTransactionsItens[index].leadingIcon,
+                      color: blueMainColor,
+                      size: 21,
+                    ),
+                  ),
+                  title: Text(
+                    controller.newTransactionsItens[index].description,
+                    style: const TextStyle(
+                      color: blueMainColor,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 13,
+                    ),
+                  ),
+                  subtitle: Text(
+                    controller.newTransactionsItens[index].subDescription,
+                    style: const TextStyle(
+                      color: Colors.grey,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 13,
+                    ),
+                  ),
+                  trailing: Text(
+                    controller.newTransactionsItens[index].amount,
+                    style: const TextStyle(
+                      color: blueMainColor,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 13,
+                    ),
+                  ),
+                ),
               ),
             ),
+            Divider(
+              thickness: 1,
+              height: 0,
+            )
           ],
-        ),
-      ),
+        );
+      }, childCount: controller.newTransactionsItens.length),
     );
   }
 }
