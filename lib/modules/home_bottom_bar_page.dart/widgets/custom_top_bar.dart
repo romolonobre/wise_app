@@ -1,14 +1,18 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wise/application/constants/contants.dart';
 
-class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const CustomAppBar({
+import 'recent_currency_list_view.dart';
+
+class CustomTopBar extends StatelessWidget {
+  const CustomTopBar({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
+    return SliverAppBar(
+      pinned: true,
       elevation: 0,
       backgroundColor: blueMainColor,
       leading: IconButton(
@@ -16,7 +20,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         icon: Icon(
           Icons.notifications_none,
           color: Colors.blue[500],
-          size: 28,
+          size: 26,
         ),
       ),
       actions: [
@@ -24,7 +28,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           onPressed: () {},
           icon: Icon(
             Icons.analytics_outlined,
-            size: 28,
+            size: 26,
             color: Colors.blue[500],
           ),
         ),
@@ -33,14 +37,19 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           icon: Icon(
             Icons.search,
             color: Colors.blue[500],
-            size: 29,
+            size: 26,
           ),
         ),
       ],
+      expandedHeight: 200,
+      flexibleSpace: FlexibleSpaceBar(
+        background: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            RecentCurrencyListView(),
+          ],
+        ),
+      ),
     );
   }
-
-  @override
-  // TODO: implement preferredSize
-  Size get preferredSize => new Size.fromHeight(40);
 }

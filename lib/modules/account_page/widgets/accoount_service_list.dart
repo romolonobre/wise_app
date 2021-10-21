@@ -4,8 +4,6 @@ import 'package:wise/application/constants/contants.dart';
 import 'package:wise/modules/account_page/widgets/account_controller.dart';
 
 class AccountServiceList extends StatelessWidget {
-  final AccountController accountController = Get.put(AccountController());
-
   final IconData icon;
   final String text;
 

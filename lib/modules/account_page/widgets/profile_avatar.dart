@@ -6,15 +6,15 @@ class ProfileAvatar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CircleAvatar(
-      radius: 35,
+      radius: 23,
       child: CircleAvatar(
-        radius: 34,
+        radius: 22,
         backgroundColor: Colors.white,
         child: CircleAvatar(
           backgroundImage: AssetImage(
             'assets/images/profile.jpeg',
           ),
-          radius: 30,
+          radius: 20,
         ),
       ),
     );

@@ -9,7 +9,9 @@ import 'package:wise/modules/home_bottom_bar_page.dart/home_bottom_bar_controlle
 
 class CardCurrencySlider extends GetView<HomeBottomBarController> {
   RecentCurrencyModel recentCurrencyModel;
-  CardCurrencySlider({required this.recentCurrencyModel});
+  CardCurrencySlider(
+    this.recentCurrencyModel,
+  );
 
   @override
   Widget build(BuildContext context) {
