@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:wise/application/constants/contants.dart';
-import 'package:wise/application/constants/custom_buttom.dart';
-import 'package:wise/application/constants/custom_text_buttom.dart';
+import 'package:wise/application/widgets/custom_buttom.dart';
+import 'package:wise/application/widgets/custom_text_buttom.dart';
 
 import 'widgets/image_header.dart';
 import 'widgets/sub_tittle_text.dart';

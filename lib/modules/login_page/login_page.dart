@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:wise/application/constants/contants.dart';
-import 'package:wise/application/constants/custom_buttom.dart';
-import 'package:wise/application/constants/custom_text_buttom.dart';
+import 'package:wise/application/widgets/custom_buttom.dart';
+import 'package:wise/application/widgets/custom_text_buttom.dart';
 import 'package:wise/modules/login_page/login_controller.dart';
 import 'package:wise/modules/login_page/widget/custom_texfield.dart';
 import 'package:wise/modules/login_page/widget/login_text_header_widget.dart';

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:wise/modules/send_page/send_page.dart';
 
 /// Custom FloatingButtom
 
@@ -12,7 +14,7 @@ class CustomFloatingButtom extends StatelessWidget {
     return CircleAvatar(
       radius: 23,
       child: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () => Get.to(SendPage()),
         child: const Text(
           'Send',
           style: TextStyle(
