@@ -14,7 +14,7 @@ class CustomFloatingButtom extends StatelessWidget {
     return CircleAvatar(
       radius: 23,
       child: FloatingActionButton(
-        onPressed: () => Get.to(SendPage()),
+        onPressed: () => Get.toNamed('/send'),
         child: const Text(
           'Send',
           style: TextStyle(
