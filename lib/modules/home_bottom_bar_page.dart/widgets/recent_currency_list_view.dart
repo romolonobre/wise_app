@@ -6,6 +6,8 @@ import 'package:wise/modules/home_bottom_bar_page.dart/widgets/card_currency_sli
 
 import '../home_bottom_bar_controller.dart';
 
+// RECENT CURRENCY LIST VIEW
+
 class RecentCurrencyListView extends GetView<HomeBottomBarController> {
   @override
   Widget build(BuildContext context) {

@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 
 import 'wise_card_caontent.dart';
 
+/// WISE BANK CARD
+
 class WiseBankCardListView extends StatelessWidget {
   const WiseBankCardListView({Key? key}) : super(key: key);
 

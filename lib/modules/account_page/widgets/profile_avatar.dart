@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/// PROFILE AVATAR WIDGET
+
 class ProfileAvatar extends StatelessWidget {
   const ProfileAvatar({Key? key}) : super(key: key);
 
