@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:wise/application/widgets/custom_buttom.dart';
 import 'package:wise/application/widgets/input_currency_value.dart';
-import 'package:wise/modules/international_page/widgets/custom_text.dart';
-import 'package:wise/modules/international_page/widgets/fee_details.dart';
+import 'package:wise/application/widgets/custom_text.dart';
+import 'package:wise/application/widgets/fee_details.dart';
 
 class InternationalPage extends StatelessWidget {
   const InternationalPage({Key? key}) : super(key: key);

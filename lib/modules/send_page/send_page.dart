@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wise/modules/international_page/international_page.dart';
+import 'package:wise/modules/local_convert_page/local_convert_page.dart';
 
 import 'widgets/custom_tab_bar.dart';
 
@@ -18,12 +19,7 @@ class SendPage extends StatelessWidget {
           bottom: CustomTaBar(),
         ),
         body: const TabBarView(
-          children: [
-            InternationalPage(),
-            Center(
-              child: Text('2323232'),
-            )
-          ],
+          children: [InternationalPage(), LocalConvertPage()],
         ),
       ),
     );
