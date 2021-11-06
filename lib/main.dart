@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:wise/modules/home_page/home_module.dart';
 import 'package:wise/modules/initial_page/initial_page_module.dart';
 import 'package:wise/modules/login_page/login_module.dart';
+import 'package:wise/modules/send_page/send_module.dart';
 import 'modules/splash_page/spash_module.dart';
 
 void main() {
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         ...InitialPageModule().routers,
         ...LoginModule().routers,
         ...HomeModule().routers,
+        ...SendModule().routers,
       ],
     );
   }

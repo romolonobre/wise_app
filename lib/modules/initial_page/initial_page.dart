@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:wise/application/constants/contants.dart';
-import 'package:wise/application/constants/custom_buttom.dart';
+import 'package:wise/application/widgets/custom_buttom.dart';
 import 'package:wise/modules/initial_page/initial_controller.dart';
 import 'package:wise/modules/initial_page/widgtes/sign_in_apple_buttom.dart';
 import 'widgtes/slider_page_view_widget.dart';
